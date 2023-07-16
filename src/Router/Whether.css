@@ -1,0 +1,116 @@
+
+
+.Whether{
+    height: 80vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.Whetherbox{
+
+    height: 400px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+align-items: center;
+    /* background: transparent; */
+    box-shadow: 1px 1px 2px 2px rgba(228, 228, 236, 0.582);
+    background-color: rgba(1, 1, 230, 0.404);
+z-index: 100 !important;
+overflow: hidden;
+}
+
+.WhetherSearchbar{
+    background-color: rgba(1, 1, 230, 0.404);
+    margin: 15px;
+    height: 40px;
+    width: 100%;
+
+      box-shadow: 0px 0px 1.5px 1.5px rgba(235, 235, 236, 0.952);
+      box-sizing: border-box;
+}
+.WhetherSearchbar input{
+    background: none;
+    border: none;
+    outline: none;
+    height: 100%;
+    width: 70%;
+    color: white;
+    font-size: 18px;
+    text-align: center;
+}
+.WhetherSearchbar input::placeholder{
+    color: white;
+}
+
+.WhetherSearchbar button{
+    height: 80%;
+    width: 25%;
+      box-shadow: 0px 0px 1.5px 1.5px rgba(235, 235, 236, 0.952);
+
+  color: white;
+    background: transparent;
+  border-radius: 9px;
+cursor: pointer;
+}
+
+
+.WhetherSearchbar button:hover{
+    color: black;
+      box-shadow: 0px 0px 1.5px 1.5px rgb(7, 7, 7);
+    background-color: white;
+    transform: scale(1.1, 1.1);
+    
+}
+
+.cloudImg{
+    width: 100px;
+    height: 100px;
+    margin: 0px;
+}
+
+  .animation1 ,  .animation2 ,  .animation3{
+    background-color: rgb(58, 58, 211);
+    height:4000px;
+    width: 400px;
+    border-radius: 50%;
+    position: relative;
+    bottom: -10rem;
+    left: 0px;
+    transform-origin: 50% 48%;
+    
+}
+.animation1{
+    animation: rotate 5s   infinite linear ;
+    opacity: 0.7;
+    z-index: 2 !important;
+    position: absolute;
+
+}
+  .animation2{
+    z-index: 2 !important;
+   animation: rotate 5s   infinite linear ;
+   opacity: 0.9;
+    z-index: 0 !important;
+
+}  .animation3{
+
+   animation: rotate 5s  infinite linear ;
+opacity: 0.5;
+    z-index: 5 !important;
+
+}
+
+@keyframes rotate{
+    from{
+        transform: rotate(0deg);
+    }
+from{
+        transform: rotate(360deg);
+    }
+
+} 
+
+    /* <FontAwesomeIcon icon="fa-duotone fa-cloud" beatFade /> */

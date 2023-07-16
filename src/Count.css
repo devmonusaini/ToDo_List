@@ -1,0 +1,64 @@
+*{
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+
+}
+.container{
+    
+    height: 80vh;
+    width: 100vw;
+
+display: flex;
+justify-content: center;
+align-items: center;
+
+}
+.count_box{
+    height: 400px;
+    width :350px;
+    background-color: rgb(81, 58, 209);
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgba(0, 0, 0, 0.411);
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px 15px ;
+    
+}
+
+.count_box h1{
+    width: 100%;
+    height: 120px ;
+    color: white;
+    padding: 4px;
+    font-size: 94px ;
+    font-weight: bold;
+text-shadow: 6px 6px rgba(0, 0, 0, 0.603);
+    margin-top: 25px;
+    margin-bottom: 150px;
+     background-color : rgba(255, 255, 255, 0.63);
+    padding-left: 150px;
+   
+}
+.btn{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+}
+.btn button{
+    height: 50px;
+    width: 120px;
+    padding: 14px;
+    color: white;
+    font-size: large;
+    font-weight: bold;
+    text-shadow: 0px 5px 5px rgba(0, 0, 0, 0.5);
+    border-radius: 9px;
+    background-color: rgb(171, 104, 233);
+}
+.btn button:hover{
+    transform: scale(1.1,1.1);
+    background-color: rgb(21, 4, 85);
+}
+

@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+body{
+    height: max-content;
+     background-image: url(../public/bg-image1.jpg);
+     background-repeat: no-repeat;
+     background-size: cover;
+}
+.Navbar_div{
+    margin: 0;
+    height: 10vh;
+    width: 100vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.Achor_div{
+    color: white;
+    padding: 2px;
+}
+.Achor_div a{
+  margin-right: 15px;
+    font-weight: bold;
+    font-size: 16px;
+    color: white;
+    text-decoration: none;
+    position: relative;
+}
+.Achor_div a::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    height: 2px;
+    width: 100%;    
+    background: #fff;
+    transform: translateY(10px);
+    transition: .5s;
+    opacity: 0;
+}
+.Achor_div a:hover::after{
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.Search_div{
+    height: 40px;
+    width: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 0px 2px 2px white;
+    border-radius: 9px;
+}
+
+.Search_div input{
+    border: none;
+    background: transparent;
+    outline: none;
+    height: 100%;
+    font-size: 14px;
+    color: white;
+    font-weight: 500;
+}
+.Search_div input::placeholder{
+    color: white;
+    font-weight: bold;
+}
+.Search_div button{
+    height: 60%;
+    width: 20%;
+    background: transparent;
+    color: white;
+    border: none;
+    box-shadow: 0px 0px 2px 2px white;
+    cursor: pointer;
+    font-weight: bold;
+
+}
+.Search_div button:hover{
+    transform: scale(1.05 , 1.05);
+    background-color: white;
+    color: black;
+}
+
+h1{
+    color: #fff;
+}
+
+.imgbox{
+    height: 250px ;
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    max-width: min-content;
+   
+}
+.ImageCom img{
+   width : 300px ;
+   height : 250px;
+     margin : 10px  ;
+   border-radius: 9px;
+   box-shadow: 2px 2px 4px 4px rgb(253, 253, 253);             
+}
+.cardCom{
+    width : 100vw ;
+     display : flex ;
+      float : left ;
+         flex-wrap : wrap;
+}
